@@ -70,7 +70,7 @@ export default function HomePage() {
             <div className={styles.heroPhotoWrap}>
               <div className={styles.heroPhoto}>
                 <Image
-                  src="/watches/198385_1.png"
+                  src="/watches/198385_1.avif"
                   alt="Movement 198'385 — the Henry Graves Jr. pocket watch, circa 1925–33"
                   width={800}
                   height={1000}
@@ -132,7 +132,7 @@ export default function HomePage() {
           <div className={styles.featureRecord}>
             <div className={styles.featurePhoto}>
               <Image
-                src="/watches/198385_1.png"
+                src="/watches/198385_1.avif"
                 alt="Movement 198'385 — the Henry Graves Jr. Supercomplication"
                 width={700}
                 height={700}

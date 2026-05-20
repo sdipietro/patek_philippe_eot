@@ -26,7 +26,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; sold to Peña, Madrid on 31 May 1865; equation table printed on the back. Photographs date from 1865.",
     hb: 'Huber & Banbery, image 175.',
-    photos: ['24919_1.jpeg', '24919_2.jpeg'],
+    photos: [],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -52,7 +52,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; exhibited in Paris in 1867; small equation sector. Equation of time table and compass on the back. Photographs date from 1867.",
     hb: 'Huber & Banbery, image 176 (p. 203).',
-    photos: ['24920_1.jpeg', '24920_2.jpeg'],
+    photos: [],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -77,7 +77,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "19'''; sold to Peña, Madrid in 1867; equation sector. Photographs date from 1867.",
     hb: 'Huber & Banbery, image 181.',
-    photos: ['27116_1.jpeg', '27116_2.jpeg'],
+    photos: [],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -101,7 +101,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 108058,
     notes: "20'''; made for A.H. Rodanet, Paris, circa 1868–70; case no. 31’090.",
     hb: null,
-    photos: ['31090_1.png'],
+    photos: ['31090_1.jpg', '31090_2.jpg', '31090_3.jpg', '31090_4.jpg', '31090_5.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -132,7 +132,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "19'''; sold on 20 February 1879; small equation sector concentric to moon phases.",
     hb: 'Huber & Banbery, image 215.',
-    photos: ['47887_1.jpeg', '47887_2.jpeg'],
+    photos: [],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -158,7 +158,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 527345,
     notes: "19'''; manufactured 1890, sold 1903; case no. 215’215.",
     hb: null,
-    photos: ['80772_1.jpeg'],
+    photos: ['80772_1.jpg', '80772_2.jpg', '80772_3.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -191,7 +191,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; sold to Mrs Bradford; manufactured 1898. In the Beyer Museum, Zürich.",
     hb: 'Huber & Banbery, image 173.',
-    photos: ['111505_1.jpeg', '111505_2.jpeg', '111505_3.jpeg', '111505_4.jpeg'],
+    photos: ['111505_3.jpeg', '111505_4.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -220,7 +220,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "19'''; made for James Ward Packard. Patek Philippe’s most complicated watch until the Graves supercomplication. Formerly in the Smithsonian collection.",
     hb: 'Huber & Banbery, image 206.',
-    photos: ['198023_1.jpeg', '198023_2.jpeg', '198023_3.jpeg', '198023_4.jpeg'],
+    photos: ['198023_1.jpg', '198023_2.jpg', '198023_3.jpg', '198023_4.jpg', '198023_5.jpg', '198023_6.jpg', '198023_7.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -252,7 +252,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 24092122,
     notes: "25'''; manufacture began 1925, delivered 1933 to Henry Graves Jr.; case no. 416’769. Sold December 1999 for USD 11,000,000; sold at Sotheby’s Geneva, 11 November 2014, for USD 24,092,122.",
     hb: 'Huber & Banbery, image 232.',
-    photos: ['198385_1.png', '198385_2.jpeg', '198385_3.jpeg'],
+    photos: ['198385_1.avif', '198385_2.avif', '198385_3.avif', '198385_4.png', '198385_5.avif', '198385_6.avif', '198385_7.avif', '198385_8.avif', '198385_9.avif', '198385_10.avif'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -290,7 +290,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 5048313,
     notes: "Yellow gold Calibre 89. Sold Antiquorum, 9 April 1989, lot 301; Antiquorum, November 2009, lot 364; Sotheby’s, 14 May 2017.",
     hb: null,
-    photos: ['844400_1.jpeg'],
+    photos: ['844400_1.webp', '844400_2.jpg', '844400_3.jpg', '844400_4.jpg', '844400_5.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -328,7 +328,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 5028556,
     notes: 'White gold Calibre 89. Sold Antiquorum, April 2004, lot 301.',
     hb: null,
-    photos: ['c89-white-gold-calibre-r15_1.jpeg'],
+    photos: ['calibre_89_wg_1.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -428,7 +428,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 152653,
     notes: "19''' / 17'''; made for Beyer, Zürich, 1974, sold 1980. The only reference 880 with equation of time. Double-signed Beyer.",
     hb: null,
-    photos: ['866569_1.jpeg'],
+    photos: ['866569_1.jpg', '866569_2.jpg', '866569_3.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -463,7 +463,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "17'''; listed in the Patek Philippe catalogue for 1993; ref. 962/1.",
     hb: null,
-    photos: ['866590_1.jpeg'],
+    photos: ['866590_1.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -494,7 +494,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 70371,
     notes: "17'''; manufactured 1992, sold by Gübelin (Lucerne) 1999; sold Dobiaschofsky 2019; sold 2ToneVintage 2022; ref. 962/1.",
     hb: null,
-    photos: ['866592_1.jpeg'],
+    photos: ['866592_1.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -528,7 +528,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 191932,
     notes: "17'''; acquired January 2001 in Taiwan; case no. 2’837’635; sold Bonhams, 15 June 2022; ref. 962/1.",
     hb: null,
-    photos: ['866595_1.jpeg'],
+    photos: ['866595_1.jpeg', '866595_2.jpeg', '866595_3.jpeg', '866595_4.jpeg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -560,7 +560,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 165106,
     notes: "17''', 29 jewels; made for Beyer, Zürich, 1983, sold 1983; case no. 332’925; hunter case. One of four watches made for Beyer in the early 1980s.",
     hb: null,
-    photos: ['866713_1.jpeg'],
+    photos: [],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -593,7 +593,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 154440,
     notes: "17'''; sold to Beyer, Zürich, 1982; case no. 332’926; hunter case.",
     hb: null,
-    photos: ['866714_1.jpeg'],
+    photos: ['866714_1.jpeg', '866714_2.jpeg', '866714_3.jpeg', '866714_4.jpeg', '866714_5.jpeg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -660,7 +660,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 3263700,
     notes: 'Star Calibre 2000; case no. 4’125’166. One of twenty examples produced. Sold Christie’s, 28 November 2012.',
     hb: null,
-    photos: ['3200005_1.jpeg'],
+    photos: ['3200005_1.jpg', '3200005_2.jpg', '3200005_3.jpg', '3200005_4.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
