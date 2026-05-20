@@ -560,7 +560,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 165106,
     notes: "17''', 29 jewels; made for Beyer, Zürich, 1983, sold 1983; case no. 332’925; hunter case. One of four watches made for Beyer in the early 1980s.",
     hb: null,
-    photos: [],
+    photos: ['866713_1.jpg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
