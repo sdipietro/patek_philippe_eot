@@ -1,0 +1,20 @@
+.tag {
+  font: 500 10.5px/1 var(--font-sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--radius-pill);
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.eot { color: #6F5526; background: #F7EFDE; border-color: #E8D6B3; }
+.rep { color: #1E2A3A; background: #E6ECF3; border-color: #C5D0DD; }
+.pc  { color: #4a4845; background: #ECE8DD; border-color: #C9C2B6; }
+.mp  { color: #F1E6CF; background: #1E2A3A; border-color: #1E2A3A; }
+.h24 { color: #2B4A38; background: #E2EAE2; border-color: #C0CFC0; }
+.sid { color: #6E5A41; background: #F0E7D2; border-color: #D9C9A6; }

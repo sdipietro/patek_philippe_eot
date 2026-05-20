@@ -1,0 +1,79 @@
+.btn {
+  font: 500 13px/1 var(--font-sans);
+  letter-spacing: 0.1em;
+  height: 46px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background var(--dur-2) var(--ease-paper),
+    color var(--dur-2) var(--ease-paper),
+    border-color var(--dur-2) var(--ease-paper);
+}
+
+/* Primary */
+.primary {
+  background: var(--gold-500);
+  color: var(--navy-900);
+}
+.primary:hover {
+  background: var(--gold-600);
+  color: var(--ivory-100);
+}
+.primary:active {
+  background: var(--gold-700);
+}
+
+/* Secondary */
+.secondary {
+  background: transparent;
+  color: var(--navy-900);
+  border-color: var(--navy-900);
+}
+.secondary:hover {
+  background: var(--navy-900);
+  color: var(--ivory-100);
+}
+.secondary.onNavy {
+  color: var(--ivory-200);
+  border-color: var(--ivory-200);
+}
+.secondary.onNavy:hover {
+  background: var(--ivory-200);
+  color: var(--navy-900);
+}
+
+/* Text */
+.text {
+  background: transparent;
+  color: var(--gold-600);
+  padding: 0;
+  height: auto;
+  border: 0;
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.text:hover {
+  color: var(--gold-700);
+}
+.text.onNavy {
+  color: var(--gold-400);
+}
+.text.onNavy:hover {
+  color: var(--ivory-200);
+}
+
+/* Arrow icon — slides right on hover */
+.arrow {
+  transition: transform var(--dur-2) var(--ease-paper);
+}
+.btn:hover .arrow {
+  transform: translateX(3px);
+}

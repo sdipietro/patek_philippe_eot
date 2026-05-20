@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Equation of Time Archive seal">
+  <g transform="translate(40 40)" stroke="#B9975B" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r="22"></circle>
+    <circle cx="0" cy="0" r="3.6" fill="#B9975B" stroke="none"></circle>
+    <path d="M0 -34 L2.5 -22 L0 -19 L-2.5 -22 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M0  34 L2.5  22 L0  19 L-2.5  22 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M-34 0 L-22 -2.5 L-19 0 L-22 2.5 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M 34 0 L 22 -2.5 L 19 0 L 22 2.5 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M-15 -15 L 15 15" opacity="0.45"></path>
+    <path d="M 15 -15 L-15 15" opacity="0.45"></path>
+  </g>
+</svg>

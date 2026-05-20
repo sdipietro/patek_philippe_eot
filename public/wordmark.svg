@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img" aria-label="Patek Philippe Equation of Time Research Archive">
+  <defs>
+    
+  </defs>
+
+  
+  <g transform="translate(280 36)" stroke="#B9975B" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r="18"></circle>
+    <circle cx="0" cy="0" r="3.2" fill="#B9975B" stroke="none"></circle>
+    
+    <path d="M0 -28 L2 -18 L0 -16 L-2 -18 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M0  28 L2  18 L0  16 L-2  18 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M-28 0 L-18 -2 L-16 0 L-18 2 Z" fill="#B9975B" stroke="none"></path>
+    <path d="M 28 0 L 18 -2 L 16 0 L 18 2 Z" fill="#B9975B" stroke="none"></path>
+    
+    <path d="M-12 -12 L 12 12" opacity="0.5"></path>
+    <path d="M 12 -12 L-12 12" opacity="0.5"></path>
+  </g>
+
+  
+  <text class="nav" x="280" y="108" text-anchor="middle" font-size="34" font-weight="600" letter-spacing="6">PATEK PHILIPPE</text>
+
+  
+  <g transform="translate(280 138)">
+    <line x1="-150" y1="0" x2="-70" y2="0" stroke="#B9975B" stroke-width="0.9"></line>
+    <text class="gold small-caps" x="0" y="4" text-anchor="middle" font-size="13" font-weight="500">EQUATION OF TIME</text>
+    <line x1="70" y1="0" x2="150" y2="0" stroke="#B9975B" stroke-width="0.9"></line>
+  </g>
+
+  
+  <text class="nav small-caps" x="280" y="170" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="8">RESEARCH ARCHIVE</text>
+
+  
+  <g transform="translate(280 196)" fill="#6E6A63" font-family="Inter, sans-serif" font-size="9.5" letter-spacing="4">
+    <text text-anchor="middle">HISTORY  <tspan fill="#B9975B">◆</tspan>  PRECISION  <tspan fill="#B9975B">◆</tspan>  RARITY</text>
+  </g>
+</svg>

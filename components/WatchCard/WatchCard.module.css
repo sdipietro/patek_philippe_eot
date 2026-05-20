@@ -1,0 +1,123 @@
+.wc {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform var(--dur-2) var(--ease-paper),
+    border-color var(--dur-2) var(--ease-paper),
+    box-shadow var(--dur-2) var(--ease-paper);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.wc:hover {
+  transform: translateY(-1px);
+  border-color: var(--gold-500);
+  box-shadow: var(--shadow-card);
+}
+
+/* Media area */
+.media {
+  aspect-ratio: 4 / 3;
+  background: var(--bg-tint-silver);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-soft);
+  position: relative;
+}
+
+.media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/guilloche.svg) center / 240px no-repeat;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.mediaArchival {
+  background: var(--ivory-300);
+}
+
+/* Photo */
+.photo {
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  position: relative;
+  z-index: 1;
+}
+
+.photoArchival {
+  filter: sepia(0.25) contrast(0.95);
+}
+
+/* No-image placeholder */
+.noImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-400);
+  position: relative;
+  z-index: 1;
+}
+
+.noImageLbl {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Body */
+.body {
+  padding: 16px 18px 18px;
+}
+
+.eyebrow {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.title {
+  font: 500 19px/1.25 var(--font-display);
+  color: var(--fg-1);
+  margin: 4px 0 8px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  font: var(--t-mono-sm);
+  color: var(--fg-3);
+  flex-wrap: wrap;
+}
+
+.meta > span {
+  white-space: nowrap;
+}
+
+.meta b {
+  color: var(--fg-1);
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.more {
+  font: var(--t-mono-sm);
+  color: var(--fg-3);
+  align-self: center;
+  padding-left: 4px;
+}

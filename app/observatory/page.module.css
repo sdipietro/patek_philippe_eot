@@ -1,0 +1,88 @@
+.hero {
+  background: var(--navy-900);
+  color: var(--fg-on-navy-1);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/guilloche.svg) center / 820px no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.h1 {
+  font: 600 clamp(40px, 5.2vw, 64px)/1.06 var(--font-display);
+  letter-spacing: -0.01em;
+  color: var(--ivory-100);
+  margin: 18px 0 24px;
+}
+
+.lede {
+  font: var(--t-lede);
+  font-style: italic;
+  color: var(--fg-on-navy-2);
+  max-width: 720px;
+  margin: 0 0 40px;
+}
+
+/* Widget placeholder */
+.widgetPlaceholder {
+  background: rgba(245, 240, 225, 0.04);
+  border: 1px solid rgba(245, 240, 225, 0.10);
+  border-radius: var(--radius-sm);
+  padding: 56px 32px;
+  text-align: center;
+  position: relative;
+}
+
+.placeholderLabel {
+  font: 500 11px/1.4 var(--font-sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+  margin-bottom: 8px;
+}
+
+.placeholderSub {
+  font: var(--t-caption);
+  color: rgba(245, 240, 225, 0.45);
+  font-style: italic;
+}
+
+/* Explainer */
+.explainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+@media (max-width: 880px) {
+  .explainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.explainerH {
+  font: 600 28px/1.2 var(--font-display);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+  margin: 12px 0 20px;
+}
+
+.formula {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-left: 3px solid var(--gold-500);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  font: var(--t-mono);
+  color: var(--fg-1);
+  margin: 16px 0;
+  letter-spacing: 0.02em;
+}

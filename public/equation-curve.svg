@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="Equation of Time curve">
+  
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#B9975B" stop-opacity="0"></stop>
+      <stop offset="0.1" stop-color="#B9975B" stop-opacity="1"></stop>
+      <stop offset="0.9" stop-color="#B9975B" stop-opacity="1"></stop>
+      <stop offset="1" stop-color="#B9975B" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+  
+  <line x1="0" y1="100" x2="640" y2="100" stroke="#C9C2B6" stroke-width="0.6" stroke-dasharray="2 3"></line>
+  
+  <g stroke="#C9C2B6" stroke-width="0.4" opacity="0.55">
+    <line x1="0" y1="60" x2="640" y2="60"></line>
+    <line x1="0" y1="140" x2="640" y2="140"></line>
+  </g>
+  
+  <path fill="none" stroke="url(#fade)" stroke-width="1.6" d="M0 100&#xA;       C 32 84, 64 70, 96 78&#xA;       S 160 130, 192 134&#xA;       S 256 96, 288 92&#xA;       S 352 108, 384 124&#xA;       S 448 168, 480 158&#xA;       S 544 86, 576 70&#xA;       S 624 78, 640 100"></path>
+  
+  <g font-family="Inter, sans-serif" font-size="8" fill="#6E6A63" letter-spacing="1.2">
+    <g text-anchor="middle">
+      <text x="26" y="186">JAN</text><text x="80" y="186">FEB</text>
+      <text x="134" y="186">MAR</text><text x="188" y="186">APR</text>
+      <text x="242" y="186">MAY</text><text x="296" y="186">JUN</text>
+      <text x="348" y="186">JUL</text><text x="400" y="186">AUG</text>
+      <text x="454" y="186">SEP</text><text x="508" y="186">OCT</text>
+      <text x="562" y="186">NOV</text><text x="614" y="186">DEC</text>
+    </g>
+  </g>
+</svg>

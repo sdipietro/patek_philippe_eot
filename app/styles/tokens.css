@@ -1,0 +1,177 @@
+/* ============================================================
+   Equation of Time Archive — Design Tokens
+   Colors, typography, spacing, shadows, motion.
+   Inspired by ivory paper, deep navy enamel, warm gold,
+   silvered dials, archival ink, and aged catalogue pages.
+   ============================================================ */
+
+/* Fonts are loaded via next/font in app/layout.tsx.
+   Font family variables are set in globals.css. */
+
+:root {
+  /* -------- Brand palette (raw) -------- */
+  --navy-900: #0d1b2a;   /* Deep Navy — primary surface for dark sections, enamel */
+  --navy-800: #142336;
+  --navy-700: #1e2a3a;   /* Ink Blue — secondary navy, panels, text on ivory */
+  --navy-600: #2a3a4f;
+  --navy-500: #3e4d62;
+
+  --gold-700: #8e7236;
+  --gold-600: #a08146;
+  --gold-500: #b9975b;   /* Warm Gold — primary accent, hairlines, micro-icons */
+  --gold-400: #c9a973;
+  --gold-300: #d9bf91;
+  --gold-200: #e8d6b3;
+  --gold-100: #f1e6cf;
+
+  --ivory-100: #faf8f5;  /* Soft Paper — page background */
+  --ivory-200: #f6f1e8;  /* Antique Ivory — card / surface */
+  --ivory-300: #efe9dc;  /* Recessed surface */
+  --silver-200: #e6e2d8; /* Dial Silver — subtle fill, table stripe */
+  --line-300: #c9c2b6;   /* Muted Line Gray — borders, dividers */
+  --line-400: #b3ad9f;
+
+  --ink-900: #1a1a1a;    /* Charcoal Text */
+  --ink-700: #2c2a26;
+  --ink-500: #6e6a63;    /* Secondary Text (warm gray) */
+  --ink-400: #8e8a82;
+  --ink-300: #aaa69d;
+
+  --state-success: #5c7a4e;  /* moss — confirmed provenance */
+  --state-warning: #a87432;  /* aged copper — flagged / disputed */
+  --state-danger:  #8a3a2e;  /* oxblood — withdrawn / lost */
+
+  /* -------- Semantic surfaces -------- */
+  --bg-page:        var(--ivory-100);
+  --bg-surface:     var(--ivory-200);
+  --bg-surface-alt: var(--ivory-300);
+  --bg-inverse:     var(--navy-900);
+  --bg-inverse-alt: var(--navy-700);
+  --bg-tint-gold:   #f7efde;
+  --bg-tint-silver: var(--silver-200);
+
+  /* -------- Semantic text -------- */
+  --fg-1: var(--ink-900);          /* Primary text on ivory */
+  --fg-2: #3b3933;                 /* Secondary text */
+  --fg-3: var(--ink-500);          /* Muted / metadata */
+  --fg-4: var(--ink-400);          /* Disabled / micro-label */
+  --fg-on-navy-1: var(--ivory-200);
+  --fg-on-navy-2: #c9c4b6;
+  --fg-on-navy-3: #8d8a7e;
+  --fg-accent: var(--gold-600);    /* Gold links / accents on ivory */
+  --fg-accent-bright: var(--gold-400);  /* Gold on navy */
+
+  /* -------- Semantic borders / hairlines -------- */
+  --border-1: var(--line-300);     /* Default hairline */
+  --border-2: var(--line-400);     /* Stronger divider */
+  --border-soft: #ddd6c6;          /* Faint paper-rule */
+  --border-on-navy: rgba(245, 240, 225, 0.14);
+  --border-gold: var(--gold-500);
+
+  /* -------- Accent -------- */
+  --accent: var(--gold-500);
+  --accent-hover: var(--gold-600);
+  --accent-press: var(--gold-700);
+
+  /* -------- Shadows (restrained, paper-like) -------- */
+  --shadow-paper:    0 1px 0 rgba(26, 22, 14, 0.04), 0 1px 2px rgba(26, 22, 14, 0.05);
+  --shadow-card:     0 1px 0 rgba(26, 22, 14, 0.04), 0 6px 18px -10px rgba(13, 27, 42, 0.18);
+  --shadow-lift:     0 2px 0 rgba(26, 22, 14, 0.04), 0 14px 36px -16px rgba(13, 27, 42, 0.28);
+  --shadow-inset:    inset 0 0 0 1px var(--border-1);
+  --ring-focus:      0 0 0 3px rgba(185, 151, 91, 0.35);
+
+  /* -------- Radii (small; this is paper, not plastic) -------- */
+  --radius-xs: 1px;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-pill: 999px;
+
+  /* -------- Spacing (8-based, with finer 4 step) -------- */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --space-13: 128px;
+
+  /* -------- Motion -------- */
+  --ease-paper: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --ease-precise: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+  --dur-4: 520ms;
+
+  /* -------- Type families (overridden in globals.css by next/font) -------- */
+  --font-display: "Playfair Display", "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-serif:   "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* -------- Type scale -------- */
+  /* Display & headings use Playfair; H4/subheads use Cormorant; body Inter. */
+  --t-display-1: 700 72px/1.05 var(--font-display);    /* Hero */
+  --t-display-2: 600 56px/1.08 var(--font-display);    /* Page title */
+  --t-h1:        600 44px/1.12 var(--font-display);
+  --t-h2:        600 32px/1.18 var(--font-display);
+  --t-h3:        500 24px/1.25 var(--font-display);
+  --t-h4:        500 20px/1.3  var(--font-serif);      /* Cormorant */
+  --t-lede:      400 20px/1.55 var(--font-serif);      /* Italic-friendly intro */
+  --t-body:      400 16px/1.6  var(--font-sans);
+  --t-body-sm:   400 14px/1.55 var(--font-sans);
+  --t-caption:   400 13px/1.5  var(--font-sans);
+  --t-meta:      500 11px/1.4  var(--font-sans);       /* Uppercase metadata label */
+  --t-table:     400 14px/1.45 var(--font-sans);
+  --t-mono-sm:   400 13px/1.4  var(--font-mono);
+  --t-mono:      500 14px/1.4  var(--font-mono);       /* Movement / case numbers */
+  --t-mono-lg:   500 18px/1.3  var(--font-mono);
+
+  /* -------- Tracking presets -------- */
+  --tracking-wide:    0.16em;   /* uppercase metadata, eyebrows */
+  --tracking-mid:     0.08em;   /* nav, buttons */
+  --tracking-tight:  -0.01em;   /* display serif */
+  --tracking-normal:  0;
+
+  /* -------- Layout -------- */
+  --container-max: 1240px;
+  --container-pad: 32px;
+  --rule: 1px solid var(--border-1);
+  --rule-soft: 1px solid var(--border-soft);
+}
+
+/* ============================================================
+   Semantic class helpers
+   ============================================================ */
+.display-1 { font: var(--t-display-1); letter-spacing: var(--tracking-tight); color: var(--fg-1); }
+.display-2 { font: var(--t-display-2); letter-spacing: var(--tracking-tight); color: var(--fg-1); }
+h1, .h1   { font: var(--t-h1); letter-spacing: var(--tracking-tight); color: var(--fg-1); margin: 0; }
+h2, .h2   { font: var(--t-h2); letter-spacing: var(--tracking-tight); color: var(--fg-1); margin: 0; }
+h3, .h3   { font: var(--t-h3); color: var(--fg-1); margin: 0; }
+h4, .h4   { font: var(--t-h4); color: var(--fg-1); margin: 0; }
+.lede     { font: var(--t-lede); color: var(--fg-2); font-style: italic; }
+.body     { font: var(--t-body); color: var(--fg-2); }
+.body-sm  { font: var(--t-body-sm); color: var(--fg-2); }
+.caption  { font: var(--t-caption); color: var(--fg-3); }
+.meta     { font: var(--t-meta); color: var(--fg-3); text-transform: uppercase; letter-spacing: var(--tracking-wide); }
+.mono     { font: var(--t-mono); color: var(--fg-1); }
+.mono-sm  { font: var(--t-mono-sm); color: var(--fg-2); }
+.mono-lg  { font: var(--t-mono-lg); color: var(--fg-1); }
+
+/* Hairline that evokes a catalogue rule */
+.rule-gold   { border: 0; height: 1px; background: var(--gold-500); width: 56px; margin: 0; }
+.rule-paper  { border: 0; height: 1px; background: var(--border-soft); width: 100%; margin: 0; }
+.rule-double { border: 0; height: 4px; background: linear-gradient(to bottom, var(--gold-500) 0, var(--gold-500) 1px, transparent 1px, transparent 3px, var(--gold-500) 3px, var(--gold-500) 4px); }
+
+/* Page baseline */
+html, body { background: var(--bg-page); color: var(--fg-1); }
+body { font: var(--t-body); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+::selection { background: var(--gold-200); color: var(--ink-900); }
