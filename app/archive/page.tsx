@@ -17,7 +17,7 @@ export default function ArchivePage() {
           <div className="eyebrow">Census</div>
           <h1 className={styles.h1}>The Archive</h1>
           <p className={styles.lede}>
-            {RECORDS.length} records catalogued — drawn from manufacture registers, the Huber &amp;
+            {RECORDS.length} examples catalogued — drawn from manufacture registers, the Huber &amp;
             Banbery reference, published auction catalogues, and reported private collections. Filter
             by period, complication, photographic record, or provenance source.
           </p>

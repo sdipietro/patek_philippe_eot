@@ -37,9 +37,7 @@ export default function HomePage() {
               <p className={styles.heroLede}>
                 A scholarly census of all known pocket watches bearing the{' '}
                 <em>équation du temps</em> complication produced by the Firm
-                from 1865 through the Star Calibre 2000. {knownCount} survivors.{' '}
-                {AUCTION_COUNT} documented auction records. A century and a half
-                of solar reckoning.
+                from 1865 through the Star Calibre 2000.
               </p>
               <div className={styles.heroCta}>
                 <Button href="/archive" kind="primary" trailingArrow>
