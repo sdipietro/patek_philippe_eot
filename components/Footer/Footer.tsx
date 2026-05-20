@@ -45,11 +45,6 @@ export default function Footer() {
             </p>
             <p className={styles.colophon} style={{ marginTop: 8 }}>
               Photographs are reproduced for research purposes only.
-              See{' '}
-              <Link href="/licensing" className={styles.inlineLink}>
-                LICENSING.md
-              </Link>{' '}
-              for rights status.
             </p>
           </div>
 
