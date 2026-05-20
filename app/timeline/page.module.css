@@ -85,3 +85,25 @@
   margin: 0;
   max-width: 540px;
 }
+
+@media (max-width: 640px) {
+  .timeline {
+    padding-left: 36px;
+  }
+  .timeline::before {
+    left: 12px;
+  }
+  .entry {
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+  }
+  .dot {
+    left: -26px;
+  }
+  .year {
+    font-size: 19px;
+  }
+  .entryTitle {
+    font-size: 18px;
+  }
+}

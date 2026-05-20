@@ -32,6 +32,22 @@
   }
 }
 
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 0 40px;
+  }
+  .heroInner {
+    gap: 32px;
+  }
+  .heroCta {
+    margin-bottom: 24px;
+  }
+  .heroMeta {
+    padding-top: 20px;
+    gap: 12px;
+  }
+}
+
 .heroText {
   display: flex;
   flex-direction: column;

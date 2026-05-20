@@ -11,6 +11,17 @@
   animation: overlayIn 200ms var(--ease-paper) both;
 }
 
+@media (max-width: 640px) {
+  .overlay {
+    padding: 12px;
+    align-items: flex-start;
+  }
+  .modal {
+    max-height: calc(100vh - 24px);
+    border-radius: var(--radius-sm);
+  }
+}
+
 @keyframes overlayIn {
   from { opacity: 0; }
   to   { opacity: 1; }

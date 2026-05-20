@@ -124,6 +124,9 @@
 }
 
 @media (max-width: 720px) {
+  .navInner {
+    gap: 8px;
+  }
   .searchLabel,
   .searchKbd {
     display: none;
@@ -134,8 +137,8 @@
   .link {
     display: none;
   }
-  .link:first-child {
-    display: block;
+  .hamburger {
+    display: flex;
   }
 }
 
@@ -147,4 +150,90 @@
   .sub {
     display: none;
   }
+}
+
+/* ── Hamburger ──────────────────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--ivory-200);
+  flex-shrink: 0;
+  transition: color var(--dur-2) var(--ease-paper);
+}
+
+.hamburger:hover {
+  color: var(--gold-400);
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition:
+    transform 200ms var(--ease-paper),
+    opacity 200ms var(--ease-paper);
+}
+
+.bar1Open {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.bar2Open {
+  opacity: 0;
+}
+
+.bar3Open {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile menu ────────────────────────────────────────── */
+.mobileMenu {
+  background: var(--navy-900);
+  border-top: 1px solid rgba(245, 240, 225, 0.10);
+  animation: menuDown 180ms var(--ease-paper) both;
+}
+
+@keyframes menuDown {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobileMenuInner {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 20px;
+}
+
+.mobileLink {
+  font: 500 13px/1 var(--font-sans);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ivory-200);
+  text-decoration: none;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(245, 240, 225, 0.06);
+  transition: color var(--dur-2) var(--ease-paper);
+}
+
+.mobileLink:last-child {
+  border-bottom: 0;
+}
+
+.mobileLink:hover {
+  color: var(--gold-400);
+}
+
+.mobileLinkActive {
+  color: var(--gold-400);
 }

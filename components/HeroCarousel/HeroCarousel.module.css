@@ -79,3 +79,15 @@
 .dotActive {
   background: var(--gold-400);
 }
+
+@media (max-width: 480px) {
+  .caption {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+  }
+  .captionTitle {
+    font-size: 14px;
+  }
+}

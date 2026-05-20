@@ -61,4 +61,18 @@
   color: var(--fg-1);
   margin: 16px 0;
   letter-spacing: 0.02em;
+  overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 0 40px;
+  }
+  .lede {
+    margin-bottom: 28px;
+  }
+  .formula {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
 }

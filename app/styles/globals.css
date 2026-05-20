@@ -56,6 +56,23 @@ body {
   .container {
     padding: 0 20px;
   }
+  .section {
+    padding: 52px 0;
+  }
+  .section-tight {
+    padding: 36px 0;
+  }
+  .section-head {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-head-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
 }
 
 /* ============================================================
