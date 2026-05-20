@@ -19,14 +19,14 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  padding: 18px 0;
+  padding: 22px 0;
 }
 
 /* Brand lockup */
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   color: var(--ivory-200);
   text-decoration: none;
   flex: none;
@@ -41,22 +41,22 @@
 }
 
 .name {
-  font: 500 14px/1.1 var(--font-display);
-  letter-spacing: 0.22em;
+  font: 500 16px/1.1 var(--font-display);
+  letter-spacing: 0.24em;
 }
 
 .sub {
-  font: 500 9.5px/1.1 var(--font-sans);
-  letter-spacing: 0.32em;
+  font: 500 10px/1.1 var(--font-sans);
+  letter-spacing: 0.30em;
   color: var(--gold-400);
-  margin-top: 3px;
+  margin-top: 4px;
   white-space: nowrap;
 }
 
 /* Nav links */
 .links {
   display: flex;
-  gap: 28px;
+  gap: 36px;
   margin-left: auto;
   align-items: center;
 }

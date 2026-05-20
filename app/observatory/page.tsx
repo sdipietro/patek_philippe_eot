@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ObservatoryWidget from '@/components/ObservatoryWidget/ObservatoryWidget';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -22,14 +23,7 @@ export default function ObservatoryPage() {
             made to display.
           </p>
 
-          {/* Live widget will be implemented in Milestone 4 */}
-          <div className={styles.widgetPlaceholder}>
-            <div className={styles.placeholderLabel}>Live Observatory Widget</div>
-            <div className={styles.placeholderSub}>
-              SVG curve, pulsing gold marker, and 4-column live readout will be
-              implemented in Milestone 4
-            </div>
-          </div>
+          <ObservatoryWidget />
         </div>
       </div>
 

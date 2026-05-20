@@ -1,0 +1,251 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 27, 42, 0.72);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 72px 16px 32px;
+  animation: overlayIn 200ms var(--ease-paper) both;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal {
+  background: var(--bg-page);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 680px;
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lift);
+  animation: modalRise 200ms var(--ease-paper) both;
+  overflow: hidden;
+}
+
+@keyframes modalRise {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 0 16px 12px;
+  flex-shrink: 0;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0 0;
+}
+
+.searchIcon {
+  color: var(--fg-3);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font: 400 17px/1.4 var(--font-sans);
+  color: var(--fg-1);
+  caret-color: var(--gold-500);
+}
+
+.input::placeholder {
+  color: var(--fg-4);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.escLabel {
+  font: 500 10px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  padding: 4px 7px;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  color: var(--fg-3);
+}
+
+.meta {
+  font: var(--t-caption);
+  color: var(--fg-4);
+  padding-top: 8px;
+}
+
+/* Results */
+.results {
+  overflow-y: auto;
+  flex: 1;
+  padding: 8px 0 16px;
+}
+
+.sectionLabel {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-4);
+  padding: 12px 20px 6px;
+}
+
+.suggestions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 4px 20px 8px;
+}
+
+.suggChip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+  font: var(--t-body-sm);
+  color: var(--fg-2);
+  cursor: pointer;
+  transition: border-color var(--dur-2), color var(--dur-2);
+}
+
+.suggChip:hover {
+  border-color: var(--gold-500);
+  color: var(--gold-700);
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.emptyGlyph {
+  font-size: 24px;
+  color: var(--gold-300);
+  margin-bottom: 12px;
+}
+
+.emptyTitle {
+  font: 500 16px/1.4 var(--font-display);
+  color: var(--fg-2);
+  margin-bottom: 6px;
+}
+
+.emptySub {
+  font: var(--t-caption);
+  color: var(--fg-3);
+}
+
+/* Result row */
+.row {
+  display: grid;
+  grid-template-columns: 52px 1fr 28px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--dur-2) var(--ease-paper);
+}
+
+.row:hover {
+  background: var(--bg-surface);
+}
+
+.rowThumb {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rowThumbArchival .rowThumbImg {
+  filter: sepia(0.6) contrast(0.9) brightness(1.05);
+}
+
+.rowThumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+.rowThumbEmpty {
+  font: var(--t-mono-sm);
+  color: var(--fg-4);
+}
+
+.rowBody {
+  overflow: hidden;
+}
+
+.rowEye {
+  font: var(--t-caption);
+  color: var(--fg-3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.rowSep {
+  color: var(--fg-4);
+}
+
+.rowTitle {
+  font: 500 14px/1.3 var(--font-display);
+  color: var(--fg-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowNotes {
+  font: var(--t-caption);
+  color: var(--fg-3);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowArrow {
+  color: var(--fg-4);
+  display: flex;
+  align-items: center;
+}
+
+.row:hover .rowArrow {
+  color: var(--gold-600);
+}
+
+/* Highlight */
+.hl {
+  background: var(--gold-200);
+  color: var(--ink-900);
+  border-radius: 2px;
+  padding: 0 1px;
+}

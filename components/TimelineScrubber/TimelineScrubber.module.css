@@ -1,0 +1,319 @@
+.scrubber {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 24px;
+  margin-bottom: 48px;
+}
+
+/* Readout */
+.readout {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.playBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold-600);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--dur-2) var(--ease-paper);
+}
+
+.playBtn:hover { background: var(--gold-700); }
+
+.playing { background: var(--navy-700); }
+.playing:hover { background: var(--navy-900); }
+
+.yearDisplay {
+  font: 500 32px/1 var(--font-mono);
+  color: var(--fg-1);
+  letter-spacing: -0.01em;
+  min-width: 64px;
+}
+
+.readoutLabel {
+  flex: 1;
+}
+
+.readoutLabelText {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  margin-bottom: 4px;
+}
+
+.activeTitle {
+  font: 500 15px/1.3 var(--font-sans);
+  color: var(--fg-1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.activeTitle:hover { color: var(--gold-700); }
+
+.sep {
+  color: var(--fg-4);
+}
+
+.activeYear {
+  font: var(--t-mono-sm);
+  color: var(--fg-3);
+}
+
+.resetBtn {
+  background: none;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font: 500 11px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  cursor: pointer;
+  transition: border-color var(--dur-2), color var(--dur-2);
+}
+
+.resetBtn:hover {
+  border-color: var(--gold-500);
+  color: var(--gold-700);
+}
+
+/* Rail */
+.rail {
+  position: relative;
+  height: 48px;
+  cursor: pointer;
+  margin-bottom: 32px;
+  touch-action: none;
+  user-select: none;
+}
+
+.railTrack {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border-1);
+  border-radius: 1px;
+  transform: translateY(-50%);
+}
+
+.fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background: var(--gold-500);
+  border-radius: 1px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Decade ticks */
+.tick {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.tickLine {
+  display: block;
+  width: 1px;
+  height: 8px;
+  background: var(--border-1);
+  margin-top: -4px;
+}
+
+.tickLabel {
+  font: 400 9px/1 var(--font-mono);
+  color: var(--fg-4);
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+
+/* Watch nodes */
+.node {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-400);
+  background: var(--bg-page);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform var(--dur-2) var(--ease-paper), background var(--dur-2);
+  z-index: 1;
+}
+
+.nodePast {
+  background: var(--gold-200);
+  border-color: var(--gold-400);
+}
+
+.nodeActive {
+  background: var(--gold-500);
+  border-color: var(--gold-600);
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: 2;
+}
+
+/* Marker (draggable stem + head) */
+.marker {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marker:active { cursor: grabbing; }
+
+.markerStem {
+  display: block;
+  width: 2px;
+  height: 24px;
+  background: var(--gold-600);
+  border-radius: 1px;
+  margin-top: -24px;
+}
+
+.markerHead {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold-600);
+  border: 2px solid var(--bg-page);
+  margin-top: -2px;
+}
+
+/* Feature card */
+.feature {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .feature {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featurePhoto {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-surface-alt);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featurePhotoArchival .featureImg {
+  filter: sepia(0.6) contrast(0.9) brightness(1.05);
+}
+
+.featureImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  display: block;
+}
+
+.featureNoImg {
+  text-align: center;
+  color: var(--fg-4);
+  font: var(--t-caption);
+  padding: 32px;
+}
+
+.featureNoImg svg {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.featureBody {
+  padding-top: 4px;
+}
+
+.featureTitle {
+  font: var(--t-h3);
+  color: var(--fg-1);
+  margin: 0 0 10px;
+}
+
+.featureNotes {
+  font: var(--t-body-sm);
+  color: var(--fg-2);
+  margin: 0 0 14px;
+  line-height: 1.65;
+  max-width: 480px;
+}
+
+.featureMeta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.metaLabel {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  margin-right: 4px;
+}
+
+.metaMono {
+  font: var(--t-mono-sm);
+  color: var(--fg-1);
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.featureLink {
+  margin-top: 4px;
+}
+
+.openLink {
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+  color: var(--gold-600);
+  text-decoration: none;
+}
+
+.openLink:hover { color: var(--gold-700); }

@@ -1,0 +1,227 @@
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 32px 0 72px;
+}
+
+@media (max-width: 880px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ── Filter rail ──────────────────────────────────────── */
+.rail {
+  position: sticky;
+  top: 80px;
+}
+
+.filterGroup {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.filterGroup:last-child {
+  border-bottom: 0;
+}
+
+.filterHead {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  margin: 0 0 8px;
+}
+
+.filterOpt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  font: var(--t-body-sm);
+  color: var(--fg-2);
+}
+
+.filterOpt input[type='checkbox'] {
+  accent-color: var(--gold-600);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.filterOptLabel {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.optCount {
+  font: var(--t-mono-sm);
+  color: var(--fg-4);
+  margin-left: auto;
+}
+
+.filterReset {
+  padding: 12px 0 0;
+}
+
+.resetLink {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.resetLink:hover {
+  color: var(--gold-700);
+}
+
+/* ── Toolbar ──────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.toolbarCount {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  white-space: nowrap;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.chip {
+  background: var(--bg-tint-gold);
+  border: 1px solid var(--gold-300);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
+  font: 500 12px/1.4 var(--font-sans);
+  color: var(--gold-700);
+  cursor: pointer;
+  transition: background var(--dur-2) var(--ease-paper);
+}
+
+.chip:hover {
+  background: var(--gold-200);
+}
+
+.toolbarRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.viewToggle {
+  display: flex;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.viewBtn {
+  background: var(--bg-page);
+  border: none;
+  padding: 6px 14px;
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  color: var(--fg-3);
+  cursor: pointer;
+  transition: background var(--dur-1), color var(--dur-1);
+}
+
+.viewBtnActive {
+  background: var(--gold-600);
+  color: white;
+}
+
+.sortSelect {
+  font: var(--t-body-sm);
+  color: var(--fg-2);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* ── Grid ─────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1080px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* ── Empty state ──────────────────────────────────────── */
+.empty {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.emptyGlyph {
+  font-size: 28px;
+  color: var(--gold-300);
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font: var(--t-h3);
+  color: var(--fg-2);
+  margin: 0 0 8px;
+}
+
+.emptySub {
+  font: var(--t-body-sm);
+  color: var(--fg-3);
+  margin: 0 0 24px;
+}
+
+.resetBtn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+  color: var(--fg-1);
+  cursor: pointer;
+  transition: border-color var(--dur-2), color var(--dur-2);
+}
+
+.resetBtn:hover {
+  border-color: var(--gold-500);
+  color: var(--gold-700);
+}

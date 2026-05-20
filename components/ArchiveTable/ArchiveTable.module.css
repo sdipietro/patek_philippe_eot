@@ -1,0 +1,165 @@
+.wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  background: var(--bg-page);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font: var(--t-body-sm);
+  color: var(--fg-1);
+  min-width: 820px;
+}
+
+.caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.table th {
+  font: var(--t-meta);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-3);
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-1);
+  background: var(--bg-surface);
+  white-space: nowrap;
+  text-align: left;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable:hover {
+  color: var(--fg-1);
+}
+
+.table th.num,
+.table td.num {
+  text-align: right;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--border-soft);
+  transition: background var(--dur-2) var(--ease-paper);
+}
+
+.table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover {
+  background: var(--bg-surface);
+}
+
+.table td {
+  padding: 9px 12px;
+  vertical-align: middle;
+}
+
+.mono {
+  font: var(--t-mono-sm);
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.small {
+  font: var(--t-caption);
+  color: var(--fg-3);
+}
+
+.muted {
+  color: var(--fg-4);
+  font-style: italic;
+}
+
+.rowLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rowLink:hover {
+  color: var(--gold-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sortGlyph {
+  color: var(--fg-4);
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.sortGlyphActive {
+  color: var(--gold-600);
+}
+
+/* Thumbnail */
+.thumbCell {
+  width: 44px;
+}
+
+.thumb {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.thumbArchival {
+  filter: sepia(0.65) contrast(0.9) brightness(1.05);
+}
+
+.thumbEmpty {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-surface-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--t-mono-sm);
+  color: var(--fg-4);
+}
+
+/* Complication pills */
+.compRow {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.compPill {
+  font: 500 10px/1 var(--font-mono);
+  padding: 3px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+  border: 1px solid;
+}
+
+.compEot { color: #6F5526; background: #F7EFDE; border-color: #E8D6B3; }
+.compRep { color: #1E2A3A; background: #E6ECF3; border-color: #C5D0DD; }
+.compPc  { color: #4a4845; background: #ECE8DD; border-color: #C9C2B6; }
+.compMp  { color: #F1E6CF; background: #1E2A3A; border-color: #1E2A3A; }
+.compH24 { color: #2B4A38; background: #E2EAE2; border-color: #C0CFC0; }
+.compSid { color: #6E5A41; background: #F0E7D2; border-color: #D9C9A6; }
+.compDefault { color: var(--fg-3); background: var(--bg-surface); border-color: var(--border-1); }
+
+.compMore {
+  font: var(--t-caption);
+  color: var(--fg-4);
+  align-self: center;
+}

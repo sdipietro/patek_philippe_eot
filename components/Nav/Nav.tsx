@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Icon from '@/components/Icon/Icon';
+import { useSearch } from '@/components/SearchProvider/SearchProvider';
 import styles from './Nav.module.css';
 
 const NAV_LINKS = [
@@ -12,22 +13,20 @@ const NAV_LINKS = [
   { href: '/observatory', label: 'Observatory' },
 ];
 
-type NavProps = {
-  onSearchOpen?: () => void;
-};
-
-export default function Nav({ onSearchOpen }: NavProps) {
+export default function Nav() {
   const pathname = usePathname();
+  const { openSearch } = useSearch();
 
   return (
     <nav className={styles.nav} aria-label="Main navigation">
-      <div className={`container ${styles.navInner}`}>
+      <div className="container">
+      <div className={styles.navInner}>
         <Link
           href="/"
           className={styles.brand}
           aria-label="Patek Philippe Equation of Time Archive — Home"
         >
-          <Icon id="seal" size={34} className={styles.seal} />
+          <Icon id="seal" size={42} className={styles.seal} />
           <div>
             <div className={styles.name}>PATEK PHILIPPE</div>
             <div className={styles.sub}>EQUATION OF TIME ARCHIVE</div>
@@ -48,7 +47,7 @@ export default function Nav({ onSearchOpen }: NavProps) {
           <button
             type="button"
             className={styles.searchBtn}
-            onClick={onSearchOpen}
+            onClick={openSearch}
             aria-label="Search the archive — press ⌘K"
           >
             <Icon id="search" size={16} />
@@ -56,6 +55,7 @@ export default function Nav({ onSearchOpen }: NavProps) {
             <kbd className={styles.searchKbd}>⌘K</kbd>
           </button>
         </div>
+      </div>
       </div>
     </nav>
   );

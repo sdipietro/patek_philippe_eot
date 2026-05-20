@@ -5,6 +5,7 @@ import { RECORDS, AUCTION_COUNT, YEAR_RANGE, getRecord } from '@/lib/records';
 import WatchCard from '@/components/WatchCard/WatchCard';
 import Button from '@/components/Button/Button';
 import Tag from '@/components/Tag/Tag';
+import ObservatoryWidget from '@/components/ObservatoryWidget/ObservatoryWidget';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -108,13 +109,8 @@ export default function HomePage() {
                 Open the Observatory
               </Button>
             </div>
-            <div className={styles.obsPlaceholder}>
-              <div className={styles.obsPlaceholderInner}>
-                <div className={styles.obsPlaceholderLabel}>Observatory</div>
-                <div className={styles.obsPlaceholderSub}>
-                  Live equation-of-time widget loads here in Milestone 4
-                </div>
-              </div>
+            <div>
+              <ObservatoryWidget compact />
             </div>
           </div>
         </div>

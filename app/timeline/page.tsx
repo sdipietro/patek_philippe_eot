@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { TIMELINE, RECORDS } from '@/lib/records';
+import { TIMELINE } from '@/lib/records';
+import TimelineScrubber from '@/components/TimelineScrubber/TimelineScrubber';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -24,15 +24,9 @@ export default function TimelinePage() {
 
       <div className="section">
         <div className="container">
-          {/* Interactive scrubber will be implemented in Milestone 5 */}
-          <div className={styles.scrubberPlaceholder}>
-            <div className={styles.placeholderLabel}>Interactive Timeline Scrubber</div>
-            <div className={styles.placeholderSub}>
-              Draggable scrubber with play/pause will be implemented in Milestone 5
-            </div>
-          </div>
+          <TimelineScrubber />
 
-          {/* Static timeline entries */}
+          {/* Milestone entries */}
           <div className={styles.timeline}>
             {TIMELINE.map((entry) => (
               <div key={entry.year} className={`${styles.entry} ${entry.key ? styles.entryKey : ''}`}>

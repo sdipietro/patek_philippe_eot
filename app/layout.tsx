@@ -3,6 +3,8 @@ import { Playfair_Display, Cormorant_Garamond, Inter, IBM_Plex_Mono } from 'next
 import clsx from 'clsx';
 import Nav from '@/components/Nav/Nav';
 import Footer from '@/components/Footer/Footer';
+import { SearchProvider } from '@/components/SearchProvider/SearchProvider';
+import SearchOverlay from '@/components/SearchOverlay/SearchOverlay';
 import '@/app/styles/globals.css';
 
 const playfairDisplay = Playfair_Display({
@@ -72,11 +74,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       )}
     >
       <body>
-        <div className="site">
-          <Nav />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <SearchProvider>
+          <div className="site">
+            <Nav />
+            <SearchOverlay />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </SearchProvider>
       </body>
     </html>
   );
