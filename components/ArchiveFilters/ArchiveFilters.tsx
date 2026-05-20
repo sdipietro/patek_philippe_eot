@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { RECORDS } from '@/lib/records';
 import {
@@ -50,6 +50,8 @@ export default function ArchiveFilters() {
 
   const resetAll = () => router.replace(location.pathname, { scroll: false });
 
+  const [filtersOpen, setFiltersOpen] = useState(false);
+
   const totalActive =
     params.periods.length +
     params.complications.length +
@@ -60,7 +62,7 @@ export default function ArchiveFilters() {
   return (
     <div className={styles.layout}>
       {/* ── Filter rail ───────────────────────────── */}
-      <aside className={styles.rail}>
+      <aside className={`${styles.rail}${filtersOpen ? ` ${styles.railVisible}` : ''}`}>
         <div className={styles.filterGroup}>
           <h4 className={styles.filterHead}>Period</h4>
           {PERIODS.map((p) => {
@@ -143,6 +145,13 @@ export default function ArchiveFilters() {
       <div>
         {/* Toolbar */}
         <div className={styles.toolbar}>
+          <button
+            className={`${styles.filterToggle}${filtersOpen ? ` ${styles.filterToggleActive}` : ''}`}
+            onClick={() => setFiltersOpen((v) => !v)}
+          >
+            {filtersOpen ? '✕' : '◇'} Filters{totalActive > 0 ? ` (${totalActive})` : ''}
+          </button>
+
           <span className={styles.toolbarCount}>
             {filtered.length} of {RECORDS.length} records
           </span>

@@ -9,10 +9,23 @@
 @media (max-width: 880px) {
   .layout {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
+    padding-top: 0;
   }
   .rail {
     position: static;
+    display: none;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-1);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .railVisible {
+    display: block;
+  }
+  .filterToggle {
+    display: flex;
   }
 }
 
@@ -89,6 +102,39 @@
 
 .resetLink:hover {
   color: var(--gold-700);
+}
+
+/* ── Mobile filter toggle (hidden on desktop) ─────────── */
+.filterToggle {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+  color: var(--fg-1);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition:
+    border-color var(--dur-2) var(--ease-paper),
+    color var(--dur-2) var(--ease-paper),
+    background var(--dur-2) var(--ease-paper);
+}
+
+.filterToggle:hover {
+  border-color: var(--gold-500);
+  color: var(--gold-700);
+}
+
+.filterToggleActive {
+  border-color: var(--gold-500);
+  background: var(--bg-tint-gold);
+  color: var(--gold-600);
 }
 
 /* ── Toolbar ──────────────────────────────────────────── */
