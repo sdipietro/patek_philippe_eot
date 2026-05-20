@@ -8,16 +8,9 @@ const NAVIGATE = [
   { href: '/observatory', label: 'Observatory' },
 ];
 
-const RESOURCES = [
-  { href: 'https://www.patek.com', label: 'Patek Philippe', external: true },
-  { href: 'https://www.phillips.com', label: 'Phillips', external: true },
-  { href: 'https://www.christies.com', label: "Christie's", external: true },
-  { href: 'https://www.sothebys.com', label: "Sotheby's", external: true },
-];
-
 const TECHNICAL = [
   { href: 'https://en.wikipedia.org/wiki/Equation_of_time', label: 'Equation of time', external: true },
-  { href: 'https://ui.adsabs.harvard.edu/', label: 'Spencer formula', external: true },
+  { href: 'https://gml.noaa.gov/grad/solcalc/', label: 'Spencer formula', external: true },
 ];
 
 export default function Footer() {
@@ -57,21 +50,6 @@ export default function Footer() {
                 </Link>
               ))}
             </nav>
-          </div>
-
-          <div>
-            <div className={styles.colHead}>Auction houses</div>
-            {RESOURCES.map(({ href, label }) => (
-              <a
-                key={href}
-                href={href}
-                className={styles.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {label}
-              </a>
-            ))}
           </div>
 
           <div>
