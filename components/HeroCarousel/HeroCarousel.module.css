@@ -3,23 +3,13 @@
 }
 
 .photo {
-  background: linear-gradient(180deg, #efe9dc 0%, #d8d1bd 100%);
+  background: #faf9f6;
   border-radius: var(--radius-sm);
   position: relative;
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-card);
   overflow: hidden;
   aspect-ratio: 4 / 5;
-}
-
-.photo::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url(/guilloche.svg) center / 420px no-repeat;
-  opacity: 0.20;
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* ── Slides ── */

@@ -80,7 +80,7 @@ export default function HeroCarousel() {
               alt={s.title}
               fill
               sizes="(max-width: 880px) 100vw, 55vw"
-              style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
+              style={{ objectFit: 'contain' }}
               priority={i === 0}
             />
           </div>
