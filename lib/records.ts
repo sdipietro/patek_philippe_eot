@@ -695,7 +695,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 11910000,
     notes: 'Four Star Calibre 2000 examples (ref. 990/1) sold as a single lot at Sotheby’s, 5 December 2025. Movements 3’200’017, 3’200’018, 3’200’019, and 3’200’020; case nos. 4’252’683–4’252’686. Part of the 20-example limited production.',
     hb: null,
-    photos: [],
+    photos: ['star_calibre_2000_set_1.jpeg', 'star_calibre_2000_set_2.jpeg', 'star_calibre_2000_set_3.jpeg', 'star_calibre_2000_set_4.jpeg', 'star_calibre_2000_set_5.jpeg', 'star_calibre_2000_set_6.jpeg', 'star_calibre_2000_set_7.jpeg', 'star_calibre_2000_set_8.jpeg'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
