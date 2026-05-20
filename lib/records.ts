@@ -252,7 +252,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: 24092122,
     notes: "25'''; manufacture began 1925, delivered 1933 to Henry Graves Jr.; case no. 416’769. Sold December 1999 for USD 11,000,000; sold at Sotheby’s Geneva, 11 November 2014, for USD 24,092,122.",
     hb: 'Huber & Banbery, image 232.',
-    photos: ['198385_1.avif', '198385_2.avif', '198385_3.avif', '198385_4.png', '198385_5.avif', '198385_6.avif', '198385_7.avif', '198385_8.avif', '198385_9.avif', '198385_10.avif'],
+    photos: ['198385_1.png', '198385_2.avif', '198385_3.avif', '198385_4.avif', '198385_5.avif', '198385_6.avif', '198385_7.avif', '198385_8.avif', '198385_9.avif', '198385_10.avif'],
     imgKind: 'auction',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
