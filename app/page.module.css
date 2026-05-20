@@ -21,8 +21,8 @@
 .heroInner {
   position: relative;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
   align-items: center;
 }
 
@@ -98,20 +98,16 @@
 /* Hero photo */
 .heroPhotoWrap {
   position: relative;
-  aspect-ratio: 4 / 5;
 }
 
 .heroPhoto {
-  aspect-ratio: 4 / 5;
   background: linear-gradient(180deg, #efe9dc 0%, #d8d1bd 100%);
   border-radius: var(--radius-sm);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+  line-height: 0;
 }
 
 .heroPhoto::before {
@@ -124,9 +120,8 @@
 }
 
 .heroPhotoImg {
+  display: block;
   mix-blend-mode: multiply;
-  position: relative;
-  z-index: 1;
 }
 
 .heroCaption {

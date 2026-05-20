@@ -72,11 +72,11 @@ export default function HomePage() {
                 <Image
                   src="/watches/198385_1.png"
                   alt="Movement 198'385 — the Henry Graves Jr. pocket watch, circa 1925–33"
-                  width={600}
-                  height={750}
+                  width={800}
+                  height={1000}
                   className={styles.heroPhotoImg}
                   priority
-                  style={{ width: 'auto', height: 'auto', maxWidth: '92%', maxHeight: '92%' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                 />
                 <div className={styles.heroCaption}>
                   <div className="eyebrow on-navy">Featured</div>
