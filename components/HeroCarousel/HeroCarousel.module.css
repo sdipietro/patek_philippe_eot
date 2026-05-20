@@ -65,13 +65,14 @@
 /* ── Dot navigation ── */
 .dots {
   display: flex;
+  justify-content: center;
   gap: 7px;
   margin-top: 11px;
 }
 
 .dot {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(245, 240, 225, 0.28);
   border: none;

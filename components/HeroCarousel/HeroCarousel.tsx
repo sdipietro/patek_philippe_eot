@@ -41,9 +41,15 @@ const SLIDES = [
     title: '80’772 — 1890',
     sub: 'Mvt. 80’772 · USD 527,345',
   },
+  {
+    slug: '866595',
+    src: '/watches/866595_1.jpeg',
+    title: 'Reference 962/1',
+    sub: 'Mvt. 866’595 · USD 191,932',
+  },
 ];
 
-const INTERVAL = 5000;
+const INTERVAL = 3500;
 
 export default function HeroCarousel() {
   const [idx, setIdx] = useState(0);
