@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Icon from '@/components/Icon/Icon';
 import styles from './HeroCarousel.module.css';
 
 const SLIDES = [
@@ -70,6 +71,23 @@ export default function HeroCarousel() {
       onMouseLeave={() => setPaused(false)}
     >
       <div className={styles.photo}>
+        <button
+          type="button"
+          className={styles.prevBtn}
+          onClick={() => { setIdx((i) => (i - 1 + SLIDES.length) % SLIDES.length); setPaused(true); }}
+          aria-label="Previous slide"
+        >
+          <Icon id="arrow-right" size={14} className={styles.iconFlip} />
+        </button>
+        <button
+          type="button"
+          className={styles.nextBtn}
+          onClick={() => { setIdx((i) => (i + 1) % SLIDES.length); setPaused(true); }}
+          aria-label="Next slide"
+        >
+          <Icon id="arrow-right" size={14} />
+        </button>
+
         {SLIDES.map((s, i) => (
           <div
             key={s.slug}

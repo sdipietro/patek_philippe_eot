@@ -9,7 +9,7 @@ import styles from './TimelineScrubber.module.css';
 
 const MIN_Y = 1860;
 const MAX_Y = 2005;
-const DECADES = Array.from({ length: 16 }, (_, i) => 1860 + i * 10);
+const DECADES = Array.from({ length: 15 }, (_, i) => 1860 + i * 10);
 
 function pct(y: number) {
   return ((y - MIN_Y) / (MAX_Y - MIN_Y)) * 100;
