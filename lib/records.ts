@@ -26,7 +26,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; sold to Peña, Madrid on 31 May 1865; equation table printed on the back. Photographs date from 1865.",
     hb: 'Huber & Banbery, image 175.',
-    photos: ['24919_1.HEIC', '24919_2.HEIC', '24919_3.HEIC'],
+    photos: ['24919_1.jpg', '24919_2.jpg', '24919_3.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
@@ -52,7 +52,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; exhibited in Paris in 1867; small equation sector. Equation of time table and compass on the back. Photographs date from 1867.",
     hb: 'Huber & Banbery, image 176 (p. 203).',
-    photos: ['24920_1.HEIC', '24920_2.HEIC', '24920_3.HEIC'],
+    photos: ['24920_1.jpg', '24920_2.jpg', '24920_3.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -77,7 +77,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "19'''; sold to Peña, Madrid in 1867; equation sector. Photographs date from 1867.",
     hb: 'Huber & Banbery, image 181.',
-    photos: ['27116_1.HEIC', '27116_2.HEIC', '27116_3.HEIC'],
+    photos: ['27116_1.jpg', '27116_2.jpg', '27116_3.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -132,7 +132,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "19'''; sold on 20 February 1879; small equation sector concentric to moon phases.",
     hb: 'Huber & Banbery, image 215.',
-    photos: ['47887_1.HEIC', '47887_2.HEIC', '47887_3.HEIC', '47887_4.HEIC', '47887_5.HEIC'],
+    photos: ['47887_1.jpg', '47887_2.jpg', '47887_3.jpg', '47887_4.jpg', '47887_5.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation Sector' },
@@ -191,7 +191,7 @@ export const RECORDS: WatchRecord[] = [
     priceRealizedUSD: null,
     notes: "20'''; sold to Mrs Bradford; manufactured 1898. In the Beyer Museum, Zürich.",
     hb: 'Huber & Banbery, image 173.',
-    photos: ['111505_1.HEIC', '111505_2.HEIC', '111505_3.HEIC', '111505_4.HEIC', '111505_5.jpeg', '111505_6.jpg'],
+    photos: ['111505_1.jpg', '111505_2.jpg', '111505_3.jpg', '111505_4.jpg', '111505_5.jpeg', '111505_6.jpg'],
     imgKind: 'archival',
     complications: [
       { kind: 'eot', label: 'Equation of Time' },
