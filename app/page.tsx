@@ -6,6 +6,7 @@ import WatchCard from '@/components/WatchCard/WatchCard';
 import Button from '@/components/Button/Button';
 import Tag from '@/components/Tag/Tag';
 import ObservatoryWidget from '@/components/ObservatoryWidget/ObservatoryWidget';
+import HeroCarousel from '@/components/HeroCarousel/HeroCarousel';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -67,28 +68,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className={styles.heroPhotoWrap}>
-              <div className={styles.heroPhoto}>
-                <Image
-                  src="/watches/198385_1.png"
-                  alt="Movement 198'385 — the Henry Graves Jr. pocket watch, circa 1925–33"
-                  width={800}
-                  height={1000}
-                  className={styles.heroPhotoImg}
-                  priority
-                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                />
-                <div className={styles.heroCaption}>
-                  <div className="eyebrow on-navy">Featured</div>
-                  <div className={styles.heroCaptionTitle}>
-                    Henry Graves Jr., 1925–33
-                  </div>
-                  <div className={styles.heroCaptionSub}>
-                    Mvt. 198&lsquo;385 · USD 24,092,122
-                  </div>
-                </div>
-              </div>
-            </div>
+            <HeroCarousel />
           </div>
         </div>
       </section>
