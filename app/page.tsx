@@ -84,7 +84,7 @@ export default function HomePage() {
                     Henry Graves Jr., 1925–33
                   </div>
                   <div className={styles.heroCaptionSub}>
-                    Mvt. 198&lsquo;385 · USD 23,237,000
+                    Mvt. 198&lsquo;385 · USD 24,092,122
                   </div>
                 </div>
               </div>
