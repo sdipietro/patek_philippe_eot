@@ -31,7 +31,7 @@ export default function TimelineScrubber() {
     if (!playing) return;
     const id = setInterval(() => {
       setYear((y) => {
-        const next = y + 0.6;
+        const next = y + 0.25;
         if (next >= MAX_Y) { setPlaying(false); return MAX_Y; }
         return next;
       });
