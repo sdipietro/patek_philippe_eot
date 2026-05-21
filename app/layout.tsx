@@ -5,6 +5,7 @@ import Nav from '@/components/Nav/Nav';
 import Footer from '@/components/Footer/Footer';
 import { SearchProvider } from '@/components/SearchProvider/SearchProvider';
 import SearchOverlay from '@/components/SearchOverlay/SearchOverlay';
+import { Analytics } from '@vercel/analytics/next';
 import '@/app/styles/globals.css';
 
 const playfairDisplay = Playfair_Display({
@@ -81,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main>{children}</main>
             <Footer />
           </div>
+          <Analytics />
         </SearchProvider>
       </body>
     </html>
